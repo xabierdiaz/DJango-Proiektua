@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "index.css" %}">
+    </head>
+    <body>
+        <h1>Kaixo</h1>
+        {% for Pla in Plat %}
+        <p>{{ Pla.platera }}
+        {{Pla.kopurua}}</p>
+       {% endfor %}
+       
+        <p>Template/ index.htman zaude</p>
+    </body>
+</html>
