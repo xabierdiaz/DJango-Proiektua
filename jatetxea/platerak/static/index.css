@@ -1,7 +1,11 @@
 h1{
- color: #FCA205;
- size: 14px;
+ color: #3b05fc;
 }
 table, th, td{
     border:1px solid black;
+}
+
+div, table{
+    text-align: center;
+    margin: auto;
 }
