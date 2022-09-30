@@ -4,12 +4,23 @@
         <link rel="stylesheet" href="{% static "index.css" %}">
     </head>
     <body>
-        <h1>Kaixo</h1>
-        {% for Pla in Plat %}
-        <p>{{ Pla.platera }}
-        {{Pla.kopurua}}</p>
-       {% endfor %}
-       
-        <p>Template/ index.htman zaude</p>
+        <h1>Platerak:</h1>
+        
+        <table style="width:10%">
+            <tr>
+                <th>Platera</th>
+                <th>Kopurua</th>
+            </tr>
+            {% for Pla in Plat %}   
+            <tr> 
+                <td>{{ Pla.platera }}</td>
+                <td>{{Pla.kopurua}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                
+            </tr>
+        </table>
+
     </body>
 </html>
