@@ -4,23 +4,28 @@
         <link rel="stylesheet" href="{% static "index.css" %}">
     </head>
     <body>
-        <h1>Platerak:</h1>
-        
-        <table style="width:10%">
-            <tr>
-                <th>Platera</th>
-                <th>Kopurua</th>
-            </tr>
-            {% for Pla in Plat %}   
-            <tr> 
-                <td>{{ Pla.platera }}</td>
-                <td>{{Pla.kopurua}}</td>
-            </tr>
-            {% endfor %}
-            <tr>
-                
-            </tr>
-        </table>
+        <div>
+            <h1>Platerak:</h1>        
+            <table style="width:10%">
+                <tr>
+                    <th>Platera</th>
+                    <th>Kopurua</th>
+                </tr>
+                {% for Pla in Plat %}   
+                <tr> 
+                    <td>{{ Pla.platera }}</td>
+                    <td>{{Pla.kopurua}}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    
+                </tr>
+            </table>
+
+            </br>
+            </br>
+            <a href="http://127.0.0.1:8000/admin">Admin moduan zartu</a>
+        </div>  
 
     </body>
 </html>
