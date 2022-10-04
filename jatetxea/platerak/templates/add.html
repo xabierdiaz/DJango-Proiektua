@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "add.css" %}">
+    </head>
+    <body>
+        <div>
+            <h1>Sartu Platerak</h1>
+
+            <form action="addrecord/" method="post">
+            {% csrf_token %}
+            Platera:<br>
+            <input name="platera">
+            <br><br>
+            Kopurua:<br>
+            <input name="kopurua">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+    </div>  
+
+    </body>
+</html>
