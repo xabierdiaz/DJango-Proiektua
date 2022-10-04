@@ -36,3 +36,12 @@ def update(request, id):
     'platerak_platera': platerak_platera,
   }
   return HttpResponse(template.render(context, request))
+
+def updaterecord(request, id):
+  plat = request.POST['platera']
+  kop = request.POST['kopurua']
+  member = Platera.objects.get(id=id)
+  member.platera = plat
+  member.kopurua = kop
+  member.save()
+  return HttpResponseRedirect(reverse('index'))

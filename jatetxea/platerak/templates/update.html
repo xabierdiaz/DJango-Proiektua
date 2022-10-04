@@ -7,17 +7,16 @@
         <div>
             <h1>Update member</h1>
 
-            <form action="updaterecord/{{ mymember.id }}" method="post">
+            <form action="updaterecord/{{ platerak_platera.id }}" method="post">
             {% csrf_token %}
-            First Name:<br>
-            <input name="first" value="{{ mymember.firstname }}">
+            Plateraren izena:<br>
+            <input name="platera" value="{{ platerak_platera.platera }}">
             <br><br>
-            Last Name:<br>
-            <input name="last" value="{{ mymember.lastname }}">
+            Plater kopurua<br>
+            <input name="kopurua" value="{{ platerak_platera.kopurua }}">
             <br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Aldatu">
             </form>
-    </div>  
-
+        </div>  
     </body>
 </html>

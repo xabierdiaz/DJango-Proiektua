@@ -373,7 +373,7 @@
         "kind": 5,
         "importPath": "jatetxea.platerak.urls",
         "description": "jatetxea.platerak.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n    path('add/addrecord/', views.addrecord, name='addrecord'),  #dirige el add.html a la funcion addrecord de views\n    path('delete/<int:id>', views.delete, name='delete'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n    path('add/addrecord/', views.addrecord, name='addrecord'),  #dirige el add.html a la funcion addrecord de views\n    path('delete/<int:id>', views.delete, name='delete'),\n    path('update/<int:id>', views.update, name='update'),\n    path('update/updaterecord/<int:id>', views.updaterecord, name='updaterecord'),\n]",
         "detail": "jatetxea.platerak.urls",
         "documentation": {}
     },
@@ -418,7 +418,16 @@
         "kind": 2,
         "importPath": "jatetxea.platerak.views",
         "description": "jatetxea.platerak.views",
-        "peekOfCode": "def update(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  template = loader.get_template('update.html')\n  context = {\n    'platerak_platera': platerak_platera,\n  }\n  return HttpResponse(template.render(context, request))",
+        "peekOfCode": "def update(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  template = loader.get_template('update.html')\n  context = {\n    'platerak_platera': platerak_platera,\n  }\n  return HttpResponse(template.render(context, request))\ndef updaterecord(request, id):\n  plat = request.POST['platera']\n  kop = request.POST['kopurua']",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "updaterecord",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def updaterecord(request, id):\n  plat = request.POST['platera']\n  kop = request.POST['kopurua']\n  member = Platera.objects.get(id=id)\n  member.platera = plat\n  member.kopurua = kop\n  member.save()\n  return HttpResponseRedirect(reverse('index'))",
         "detail": "jatetxea.platerak.views",
         "documentation": {}
     },
