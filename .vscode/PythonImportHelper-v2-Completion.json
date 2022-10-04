@@ -1,0 +1,443 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "loader",
+        "importPath": "django.template",
+        "description": "django.template",
+        "isExtraImport": true,
+        "detail": "django.template",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.asgi",
+        "description": "jatetxea.jatetxea.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "jatetxea.jatetxea.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-pb^o&%a&@9&^*0mog*lt08l6pg86*efdyx3epa#1x-heisp8y-'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-pb^o&%a&@9&^*0mog*lt08l6pg86*efdyx3epa#1x-heisp8y-'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'platerak',",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'platerak',\n]\nMIDDLEWARE = [",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'jatetxea.urls'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "ROOT_URLCONF = 'jatetxea.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'jatetxea.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.settings",
+        "description": "jatetxea.jatetxea.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "jatetxea.jatetxea.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.urls",
+        "description": "jatetxea.jatetxea.urls",
+        "peekOfCode": "urlpatterns = [\n    path('platerak/', include('platerak.urls')),    \n    path('admin/', admin.site.urls),\n    path('', include('platerak.urls')), #'' indica el url por defecto\n]",
+        "detail": "jatetxea.jatetxea.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "jatetxea.jatetxea.wsgi",
+        "description": "jatetxea.jatetxea.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "jatetxea.jatetxea.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "jatetxea.platerak.migrations.0001_initial",
+        "description": "jatetxea.platerak.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Platera',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('platera', models.CharField(max_length=50)),",
+        "detail": "jatetxea.platerak.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "PlaterakConfig",
+        "kind": 6,
+        "importPath": "jatetxea.platerak.apps",
+        "description": "jatetxea.platerak.apps",
+        "peekOfCode": "class PlaterakConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'platerak'",
+        "detail": "jatetxea.platerak.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Platera",
+        "kind": 6,
+        "importPath": "jatetxea.platerak.models",
+        "description": "jatetxea.platerak.models",
+        "peekOfCode": "class Platera(models.Model):\n    platera = models.CharField(max_length=50)\n    kopurua = models.IntegerField()",
+        "detail": "jatetxea.platerak.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "jatetxea.platerak.urls",
+        "description": "jatetxea.platerak.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('add/', views.add, name='add'),\n    path('add/addrecord/', views.addrecord, name='addrecord'),  #dirige el add.html a la funcion addrecord de views\n    path('delete/<int:id>', views.delete, name='delete'),\n    path('update/<int:id>', views.update, name='update'),\n    path('update/updaterecord/<int:id>', views.updaterecord, name='updaterecord'),\n]",
+        "detail": "jatetxea.platerak.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def index(request):\n    Plat = Platera.objects.all()    #lo coge del models.py\n    return render(request, 'index.html', {'Plat': Plat})\n#datuak sartu\ndef add(request):\n  template = loader.get_template('add.html')\n  return HttpResponse(template.render({}, request))\ndef addrecord(request):\n  x = request.POST['platera']\n  y = request.POST['kopurua']",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def add(request):\n  template = loader.get_template('add.html')\n  return HttpResponse(template.render({}, request))\ndef addrecord(request):\n  x = request.POST['platera']\n  y = request.POST['kopurua']\n  platerak_platera = Platera(platera=x, kopurua=y) #coge el modelo de models.py con los valores (platera y kopurua) que nosotros hemos introducido por add.html\n  platerak_platera.save()\n  return HttpResponseRedirect(reverse('index'))\n#datuak ezabatu",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "addrecord",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def addrecord(request):\n  x = request.POST['platera']\n  y = request.POST['kopurua']\n  platerak_platera = Platera(platera=x, kopurua=y) #coge el modelo de models.py con los valores (platera y kopurua) que nosotros hemos introducido por add.html\n  platerak_platera.save()\n  return HttpResponseRedirect(reverse('index'))\n#datuak ezabatu\ndef delete(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  platerak_platera.delete()",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def delete(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  platerak_platera.delete()\n  return HttpResponseRedirect(reverse('index'))\n#datuak aldatu\ndef update(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  template = loader.get_template('update.html')\n  context = {\n    'platerak_platera': platerak_platera,",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def update(request, id):\n  platerak_platera = Platera.objects.get(id=id)\n  template = loader.get_template('update.html')\n  context = {\n    'platerak_platera': platerak_platera,\n  }\n  return HttpResponse(template.render(context, request))\ndef updaterecord(request, id):\n  plat = request.POST['platera']\n  kop = request.POST['kopurua']",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "updaterecord",
+        "kind": 2,
+        "importPath": "jatetxea.platerak.views",
+        "description": "jatetxea.platerak.views",
+        "peekOfCode": "def updaterecord(request, id):\n  plat = request.POST['platera']\n  kop = request.POST['kopurua']\n  member = Platera.objects.get(id=id)\n  member.platera = plat\n  member.kopurua = kop\n  member.save()\n  return HttpResponseRedirect(reverse('index'))",
+        "detail": "jatetxea.platerak.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "jatetxea.manage",
+        "description": "jatetxea.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jatetxea.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "jatetxea.manage",
+        "documentation": {}
+    }
+]

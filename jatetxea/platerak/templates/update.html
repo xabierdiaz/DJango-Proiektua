@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "add.css" %}">
+    </head>
+    <body>
+        <div>
+            <h1>Update member</h1>
+
+            <form action="updaterecord/{{ platerak_platera.id }}" method="post">
+            {% csrf_token %}
+            Plateraren izena:<br>
+            <input name="platera" value="{{ platerak_platera.platera }}">
+            <br><br>
+            Plater kopurua<br>
+            <input name="kopurua" value="{{ platerak_platera.kopurua }}">
+            <br><br>
+            <input type="submit" value="Aldatu">
+            </form>
+        </div>  
+    </body>
+</html>

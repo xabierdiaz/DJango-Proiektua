@@ -5,26 +5,25 @@
     </head>
     <body>
         <div>
-            <h1>Platerak:</h1>        
-            <table style="width:10%">
-                <tr>
-                    <th>Platera</th>
-                    <th>Kopurua</th>
-                </tr>
-                {% for Pla in Plat %}   
-                <tr> 
-                    <td>{{ Pla.platera }}</td>
-                    <td>{{Pla.kopurua}}</td>
-                </tr>
+            <h1>Platerak:</h1>
+            <table border="1">
+                {% for Pla in Plat %}  
+                  <tr>
+                  <td>{{ Pla.platera }}</td>
+                  <td>{{ Pla.kopurua }}</td>
+                  <td><a href="delete/{{ Pla.id }}">Delete</a></td>
+                  <td><a href="update/{{ Pla.id }}">Aldatu</a></td>
+                  </tr>
                 {% endfor %}
-                <tr>
-                    
-                </tr>
-            </table>
+                </table>
             </br>
             </br>
             <a href="http://127.0.0.1:8000/admin">Admin</a>
-        </div>  
+        
+            <p>
+                <a href="add/">Sartu plater berria.</a>
+            </p>
+    </div>  
 
     </body>
 </html>
