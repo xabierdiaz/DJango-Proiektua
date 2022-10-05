@@ -4,11 +4,18 @@ from django.shortcuts import render
 from .models import Platera
 from django.template import loader
 
-
 #datuak ikusi
+"""def index(request):
+    Plat = Platera.objects.all()    #lo coge del models.py
+    return render(request, 'index.html', {'Plat': Plat})"""
+
+#datuak ikusi eta plater guztien balioa gehiru.
 def index(request):
     Plat = Platera.objects.all()    #lo coge del models.py
-    return render(request, 'index.html', {'Plat': Plat})
+    p=0
+    for plt in Plat:
+      p += plt.kopurua
+    return render(request, 'index.html', {'Plat': Plat, 'p':p})
 
 #datuak sartu
 def add(request):
@@ -46,10 +53,3 @@ def updaterecord(request, id):
   member.save()
   return HttpResponseRedirect(reverse('index'))
 
-#plater guztiak
-def index(request):
-    Plat = Platera.objects.all()    #lo coge del models.py
-    p=0
-    for plt in Plat:
-      p += plt.kopurua
-    return render(request, 'index.html', {'Plat': Plat, 'p':p})
