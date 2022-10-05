@@ -47,9 +47,9 @@ def update(request, id):
 def updaterecord(request, id):
   plat = request.POST['platera']
   kop = request.POST['kopurua']
-  member = Platera.objects.get(id=id)
-  member.platera = plat
-  member.kopurua = kop
-  member.save()
+  platob = Platera.objects.get(id=id)
+  platob.platera = plat
+  platob.kopurua = kop
+  platob.save()
   return HttpResponseRedirect(reverse('index'))
 
