@@ -45,3 +45,11 @@ def updaterecord(request, id):
   member.kopurua = kop
   member.save()
   return HttpResponseRedirect(reverse('index'))
+
+#plater guztiak
+def index(request):
+    Plat = Platera.objects.all()    #lo coge del models.py
+    p=0
+    for plt in Plat:
+      p += plt.kopurua
+    return render(request, 'index.html', {'Plat': Plat, 'p':p})
