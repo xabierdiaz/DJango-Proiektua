@@ -9,7 +9,6 @@ from django.template import loader
     Plat = Platera.objects.all()    #lo coge del models.py
     return render(request, 'index.html', {'Plat': Plat})"""
 
-
 def index(request):
     #datuak ikusi eta plater guztien balioa gehiru.
     Plat = Platera.objects.all()    #lo coge del models.py
@@ -56,9 +55,8 @@ def updaterecord(request, id):
 
 #saskia
 def saskia(request, id):
-    Plat = Platera.objects.all()    #lo coge del models.py
     pla = Platera.objects.get(id=id)
     p = 0
     p += pla.kopurua
-    return render(request, 'saskia.html', {'Plat': Plat, 'p':p})
+    return render(request, 'saskia.html', {'p':p})
   
