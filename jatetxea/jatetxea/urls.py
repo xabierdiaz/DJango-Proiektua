@@ -20,4 +20,5 @@ urlpatterns = [
     path('platerak/', include('platerak.urls')),    
     path('admin/', admin.site.urls),
     path('', include('platerak.urls')), #'' indica el url por defecto
+    path('langileak/', include('langileak.urls')),
 ]
