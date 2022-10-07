@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from . import views
 
@@ -15,4 +15,5 @@ urlpatterns = [
     
     path('saskia/<int:id>', views.saskia, name='saskia'),
     
+    path('langileak/', include('langileak.urls')), #'' me envia al langileak url
 ]
