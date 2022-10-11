@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "sukaldaria_add.css" %}">
+    </head>
+    <body>
+        <div>
+            <h1>Langilea Sartu</h1>
+
+            <form action="addrecord_sukaldaria/" method="post">
+            {% csrf_token %}
+            Sukaldari Izena:<br>
+            <input name="sukaldari_izena">
+            <br><br>
+            Sukaldari Abizena:<br>
+            <input name="sukaldari_abizena">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
+    </div>  
+
+    </body>
+</html>

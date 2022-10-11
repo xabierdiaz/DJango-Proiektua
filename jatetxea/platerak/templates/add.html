@@ -15,6 +15,12 @@
             Kopurua:<br>
             <input name="kopurua">
             <br><br>
+            <select name="sukaldaria">
+                {% for Suk in Sukal %}  
+                <option value="{{Suk.id}}">{{Suk.izena}}</option>
+                {% endfor %}
+            </select>
+            <br><br>
             <input type="submit" value="Submit">
             </form>
     </div>  
