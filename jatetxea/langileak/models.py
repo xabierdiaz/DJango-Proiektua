@@ -1,8 +1,9 @@
 from email.policy import default
 from django.db import models
-from platerak.models import Platera
 
 # Create your models here.
-class Langilea(models.Model):
+class Sukaldaria(models.Model):
     izena = models.CharField(max_length=50)
-    platera = models.ForeignKey(Platera, on_delete=models.CASCADE)
+    abizena = models.CharField(max_length=50)
+    def __str__(self): # objetuari deitzerakoan self.*** jartzen dugunari deitzen diogu
+        return u'%s'%self.izena
