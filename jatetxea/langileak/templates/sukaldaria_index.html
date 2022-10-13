@@ -5,7 +5,18 @@
     </head>
     <body>
         <div>
-            <h1>Langileak:</h1>
+            <h1>Sukaldariak:</h1>
+            <table border="1">
+                {% for suk in Suka %}  
+                  <tr>
+                  <td>{{ suk.izena }}</td>
+                  <td>{{ suk.abizena }}</td>
+                  <td><a href="sukaldaria_delete/{{ suk.id }}"><img src="../../Irudiak/eliminar.png"></a></td>
+                  <td><a href="sukaldaria_update/{{ suk.id }}">Aldatu</a></td>
+                  </tr>       
+                {% endfor %}             
+            </table>
+            
         </br>
         <p>
             <a href="sukaldaria_add/">Sukaldari berria sortu</a>
