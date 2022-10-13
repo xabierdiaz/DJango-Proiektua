@@ -48,9 +48,12 @@ def delete(request, id):
 
 def update(request, id):
     platerak_platera = Platera.objects.get(id=id)
+    Sukal = Sukaldaria.objects.all()
+
     template = loader.get_template('update.html')
     context = {
         'platerak_platera': platerak_platera,
+        'Sukal' : Sukal,
     }
     return HttpResponse(template.render(context, request))
 
@@ -58,9 +61,14 @@ def update(request, id):
 def updaterecord(request, id):
     plat = request.POST['platera']
     kop = request.POST['kopurua']
+    su = request.POST['sukaldaria']
+
+    sukaldari_ob = Sukaldaria.objects.get(id=su)
     platob = Platera.objects.get(id=id)
+
     platob.platera = plat
     platob.kopurua = kop
+    platob.sukaldaria = sukaldari_ob
     platob.save()
     return HttpResponseRedirect(reverse('index'))
 

@@ -15,6 +15,12 @@
             Plater kopurua<br>
             <input name="kopurua" value="{{ platerak_platera.kopurua }}">
             <br><br>
+            <select name="sukaldaria">
+                {% for suk in Sukal %}  
+                <option value="{{suk.id}}">{{suk.izena}}</option>
+                {% endfor %}
+            </select>
+            <br><br>
             <input type="submit" value="Aldatu">
             </form>
         </div>  
