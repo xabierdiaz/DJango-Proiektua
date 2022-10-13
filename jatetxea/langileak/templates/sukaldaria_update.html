@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "add.css" %}">
+    </head>
+    <body>
+        <div>
+            <h1>Sulakdaria Update</h1>
+
+            <form action="sukaldaria_updaterecord/{{ sukal.id }}" method="post">
+            {% csrf_token %}
+            Plateraren izena:<br>
+            <input name="izena" value="{{ sukal.izena }}">
+            <br><br>
+            Plater abizena:<br>
+            <input name="abizena" value="{{ sukal.abizena }}">
+            <br><br>
+            <input type="submit" value="Aldatu">
+            </form>
+        </div>  
+    </body>
+</html>
